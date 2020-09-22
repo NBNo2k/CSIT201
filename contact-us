@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a name="topmost"></a>
+    <div id="container">
+        <img src="Images/Logo.png" alt="Logo de Zozor" id="logo" style="width: 100px; float: left;" />
+        <div id="menu">
+            <a href="index.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="https://www.facebook.com/dork.kaye">MY FB</a>
+        </div>
+    </div>
+
+    <div class="regform">
+        <h1 class="contact">Contact Us</h1>
+        <div class="main">
+            <form>
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input class="firstname" type="text" name="first_name" /><br />
+                    <label class="firstlabel">
+                        First name
+                    </label>
+                    <input class="lastname" type="text" name="last_name" />
+                    <label class="lastlabel">Last Name</label>
+                </div>
+
+                <h2 class="name">Email</h2>
+                <input class="email" type="text" name="email" />
+
+                <h2 class="name">Message</h2>
+                <textarea name='yourt' cols='30' rows='5' class="comment"></textarea>
+
+                <button type="submit" class="send">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <h5>&nbsp;</h5>
+
+    <div id="footer">
+        <img src="Images/Logo.png" alt="Logo de Zozor" id="footer-logo" style="width: 110px; float: left;" />
+        <span style="float: right;">All Rights Reserved &copy;</span>
+        <ul>
+            <li><img src="Images/facebook.png" style="width: 20px;" /></li>
+            <li><img src="Images/instagram.png" style="width: 20px;" /></li>
+            <li><img src="Images/twitter.png" style="width: 20px;" /></li>
+            <li><img src="Images/youtube.png" style="width: 20px;" /></li>
+        </ul>
+    </div>
+
+    <a href="#topmost">
+        <span id="topper" style="position: fixed; right: 20px; bottom: 20px;
+        display: inline-block; background-color: dimgray; font-weight: bold;
+        color: white; width: 50px; height: 50px; border-radius: 25px;
+        border: solid 1px white; text-align: center; font-size: 40px;">&uarr;</span>
+    </a>
+</body>
+</html>
