@@ -1,0 +1,447 @@
+﻿
+body {
+    padding: 0px;
+    margin-top: 4px;
+    font-family: Tahoma;
+    background-color: #151515;
+    background-position: center;
+}
+
+#header {
+    padding: 10px;
+    text-align: center;
+    height: 250px;
+}
+
+#menu {
+    font-family: 'Copperplate Gothic';
+    font-weight: bold;
+    text-align: right;
+}
+
+#menu a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 25px;
+}
+
+#menu a:hover {
+    color: #969696;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 25px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#content {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1%;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.destinations {
+    top: 435px;
+    right: 100px;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#151515, #151515), radial-gradient(white, white);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.destinations:hover {
+    background: #787878;
+}
+.destinations span {
+    display: block;
+    padding: 8px 22px;
+}
+
+.container {
+    width: 90px;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 20%;
+    background: #fff;
+    border: 2px solid #ccc;
+    margin-bottom: 50px;
+    margin-left: 56px;
+    transition: 0.3s;
+    border-radius: 25px;
+    padding: 5px;
+    margin-right: -30px;
+}
+
+.card-header1 {
+    padding: 50px 10px;
+    background-image: url(Images/Indonesia.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card-header2 {
+    padding: 50px 10px;
+    background-image: url(Images/Thailand.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card-header3 {
+    padding: 50px 10px;
+    background-image: url(Images/Portugal.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.card-header4 {
+    padding: 50px 10px;
+    background-image: url(Images/SriLanka.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+.card-body {
+    padding: 30px 20px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.card-body .btn {
+        display: block;
+        color: #fff;
+        text-align: center;
+        background: #151515;
+        margin-top: 30px;
+        text-decoration: none;
+        padding: 10px 5px;
+}
+
+.card-body .btn:hover {
+        color: #969696;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .containers {
+        width: 100%;
+    }
+
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+#footer {
+    background-color: gray;
+    padding: 30px;
+    height: 60px;
+}
+
+#logo {
+    margin-top: -10px;
+}
+
+#footer-logo {
+    margin-top: -30px;
+}
+
+#footer ul {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+}
+
+.profile-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: Arial;
+    color: white;
+    text-decoration: underline overline;
+}
+
+.profile {
+    text-align: center;
+    color: white;
+}
+
+.profile h1 {
+    color: #adb5bd;
+}
+
+.about-me h3 {
+    color: #adb5bd;
+    display: block;
+    margin-left: 12%;
+}
+
+.about-me h4 {
+    color: #adb5bd;
+    display: block;
+    margin-left: 65%;
+    margin-top: -210px;
+}
+
+.about-me p {
+    color: white;
+    display: block;
+    margin-left: 12%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+#ProfilePic {
+    margin-top: -220px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.regform {
+    width: 800px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+}
+
+.contact {
+    width: 800px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+}
+
+.main {
+    background-color: #bdc3c7;
+    width: 800px;
+    margin: auto;
+}
+
+.form {
+    padding: 10px;
+}
+
+#name {
+    width: 100%;
+    height: 100px;
+}
+
+.name {
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.firstname {
+    position: relative;
+    left: -80px;
+    top: -45px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.lastname {
+    position: relative;
+    left: 180px;
+    top: -88px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: black;
+}
+
+.firstlabel {
+    position: relative;
+    color: #2c3e50;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 80px;
+    top: -50px;
+    color: #2c3e50;
+}
+
+.lastlabel {
+    position: relative;
+    color: #2c3e50;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 20px;
+    top: -50px;
+}
+
+.email {
+    position: relative;
+    left: -113px;
+    top: -37px;
+    border-radius: 6px;
+    width: 20%;
+}
+
+.comment {
+    position: relative;
+    left: -46px;
+    top: -30px;
+    border-radius: 6px;
+}
+
+.send {
+    position: relative;
+    left: -100px;
+    top: -5px;
+}
+

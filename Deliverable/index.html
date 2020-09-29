@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a name="topmost"></a>
+    <div id="container">
+        <img src="Images/Logo.png" alt="Logo de Zozor" id="logo" style="width: 100px; float: left;" />
+        <div id="menu">
+            <a href="index.html">HOME</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="https://www.facebook.com/dork.kaye">MY FB</a>
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="Images/Australia.jpg" style="width:100%">
+            <div class="text">🛪 Sydney, Australia</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/Spain.jpg" style="width:100%">
+            <div class="text">🛪 Barcelona, Spain</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/Greece.jpg" style="width:100%">
+            <div class="text">🛪 Oia, Greece</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div id="content">
+        <h1>POPULAR DESTINATIONS</h1>
+        <a href="#" class="destinations"><span>View all destinations</span></a>
+    </div>
+
+    <div class="containers">
+        <div class="row">
+            <div class="card">
+                <div class="card-header1">
+                    <div class="country1">
+                        <h1>INDONESIA</h1>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header2">
+                    <h1>THAILAND</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header3">
+                    <h1>PORTUGAL</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header4">
+                    <h1>SRI LANKA</h1>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <img src="Images/Logo.png" alt="Logo de Zozor" id="footer-logo" style="width: 110px; float: left;" />
+        <span style="float: right;">All Rights Reserved &copy;</span>
+        <ul>
+            <li><img src="Images/facebook.png" style="width: 20px;" /></li>
+            <li><img src="Images/instagram.png" style="width: 20px;" /></li>
+            <li><img src="Images/twitter.png" style="width: 20px;" /></li>
+            <li><img src="Images/youtube.png" style="width: 20px;" /></li>
+        </ul>
+    </div>
+
+    <a href="#topmost">
+        <span id="topper" style="position: fixed; right: 20px; bottom: 20px;
+        display: inline-block; background-color: dimgray; font-weight: bold;
+        color: white; width: 50px; height: 50px; border-radius: 25px;
+        border: solid 1px white; text-align: center; font-size: 40px;">&uarr;</span>
+    </a>
+</body>
+</html>
