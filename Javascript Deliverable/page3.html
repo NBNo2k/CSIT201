@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="menu">
+        <a href="page1.html">PAGE 1</a>
+        <a href="page2.html">PAGE 2</a>
+        <a href="page3.html">PAGE 3</a>
+        <a href="page4.html">PAGE 4</a>
+        <a href="page5.html">PAGE 5</a>
+    </div>
+
+    <script type="text/javascript" language="javascript"> 
+        var age;
+
+        var firstname = prompt("First name:");
+        document.write("Hello " + firstname);
+        var year = prompt("Year of birth:");
+
+        if (year < 2020) {
+            age = 2020 - year;
+            document.write("<br>You are " + age);
+            document.write(" years young");
+        }
+        else
+            document.write("<br>Year you entered is invalid");
+    </script>
+</body>
+</html>

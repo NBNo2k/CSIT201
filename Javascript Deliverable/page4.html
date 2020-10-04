@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        #paragraph1 {
+            width: auto;
+            height: auto;
+            background-color: white;
+            color: black;
+            padding: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            margin-top: 3%;
+        }
+    </style>
+
+    <div id="menu">
+        <a href="page1.html">PAGE 1</a>
+        <a href="page2.html">PAGE 2</a>
+        <a href="page3.html">PAGE 3</a>
+        <a href="page4.html">PAGE 4</a>
+        <a href="page5.html">PAGE 5</a>
+    </div>
+
+    <div id="paragraph1">
+        <p>Cupcake ipsum dolor sit amet cake croissant fruitcake muffin. Sweet bonbon candy powder cheesecake muffin sesame snaps jujubes. Muffin macaroon cheesecake cookie souffl&eacute; cookie cheesecake lollipop candy canes. Halvah cotton candy sesame snaps chocolate bar. Sugar plum dessert drag&eacute;e macaroon chupa chups. Cake cheesecake wafer cotton candy. Danish jelly halvah jelly beans tootsie roll donut. Halvah cheesecake halvah jujubes sweet roll biscuit croissant wafer. Cake halvah chocolate bar sugar plum apple pie.</p>
+        <p>Tootsie roll pie topping powder sugar plum souffl&eacute;. Gingerbread sugar plum tiramisu powder macaroon candy canes drag&eacute;e icing. Sweet macaroon tootsie roll chocolate chocolate cake. Tootsie roll muffin donut apple pie gummies powder. Lollipop candy canes bonbon sesame snaps danish brownie croissant tiramisu. Oat cake pastry pudding ice cream fruitcake. Muffin pudding croissant pudding tart oat cake caramels sugar plum icing.</p>
+    </div>  
+
+    <script type="text/javascript" language="javascript">
+    
+        var background = prompt("Paragraph background:");
+
+        document.getElementById("paragraph1").style.backgroundColor = background;
+
+        if (background == "black" || background == "gray" || background == "violet" || background == "blue") {
+            document.getElementById("paragraph1").style.color = "white";
+        }
+    </script>
+</body>
+</html>

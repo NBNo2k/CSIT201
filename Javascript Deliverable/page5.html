@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="menu">
+        <a href="page1.html">PAGE 1</a>
+        <a href="page2.html">PAGE 2</a>
+        <a href="page3.html">PAGE 3</a>
+        <a href="page4.html">PAGE 4</a>
+        <a href="page5.html">PAGE 5</a>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+        var feeling = prompt("How are you feeling?");
+
+        if (feeling == "I'm down" || feeling == "I am feeling down" || feeling == "Down" || feeling == "I'm sad" || feeling == "I am sad" || feeling == "Sad") {
+            var answer = prompt("Is it because of your job?");
+
+            if (answer == "Yes") {
+                document.write("That's really sad");
+            }
+            else if (answer == "Maybe") {
+                document.write("If it is, then that's sad");
+            }
+            else {
+                answer = prompt("Is is your grades?");
+
+                if (answer == "Yes") {
+                    document.write("Study well");
+                }
+                else if (answer == "Maybe") {
+                    document.write("You can get through that");
+                }
+                else {
+                    document.write("Whatever it is you can get through that");
+                }
+            }
+        }
+        else if (feeling == "I'm happy" || feeling = "I am happy" || feeling == "Happy") {
+            var answer = prompt("Wow that's good to hear");
+        }
+    </script>
+</body>
+</html>
