@@ -79,11 +79,18 @@
         }
 
         .Luffy {
-            width: 200px;
+            width: 25%;
             position: absolute;
-            top: 30%;
-            left: 20%;
+            top: 12%;
+            left: 5%;
             z-index: 1;
+        }
+    
+        .information h4{
+            margin-top: 15%;
+            margin-left: 75%;
+            font-size: 100px;
+            color: white;
         }
     </style>
 
@@ -108,20 +115,19 @@
             <div class="overlay"></div>
             <img src="images/Luffy.png" class="Luffy" />
             <div id="circle">
-
+                <h4 id="firstname">No name</h4>
             </div>
         </div>
-
-        <h1 id="answer">Temp</h1>
     </div>
 
     <script type="text/javascript" language="javascript"> 
         var age;
 
-        var firstname = prompt("First name:");
-        document.write("Hi " + firstname);
+        var fname = document.getElementById("firstname");
+        fname = prompt("Hi there! What is your name?");
+        document.getElementById("firstname").innerHTML = "Hi " + fname;
 
-        var year = prompt("Year of birth:");
+        var year = prompt("What year were you born?");
 
         if (year < 2020) {
             age = 2020 - year;
