@@ -78,6 +78,17 @@
             top: 0;
         }
 
+        #circle {
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            transform: rotate(0deg);
+            transition: 1s;
+        }
+
         .Luffy {
             width: 25%;
             position: absolute;
@@ -87,11 +98,19 @@
         }
     
         .information h4{
-            margin-top: 15%;
-            margin-left: 75%;
-            font-size: 100px;
+            margin-top: 25%;
+            margin-left: 140%;
+            font-size: 80px;
             color: white;
         }
+
+        #age {
+            margin-top: 5%;
+            margin-left: 140%;
+            font-size: 80px;
+            color: white;
+        }
+
     </style>
 
     <div class="main">
@@ -116,6 +135,8 @@
             <img src="images/Luffy.png" class="Luffy" />
             <div id="circle">
                 <h4 id="firstname">No name</h4>
+                <img src="images/Chopper.gif" style="width: 20%"/>
+                <h4 id="age">No age</h4>
             </div>
         </div>
     </div>
@@ -125,16 +146,17 @@
 
         var fname = document.getElementById("firstname");
         fname = prompt("Hi there! What is your name?");
-        document.getElementById("firstname").innerHTML = "Hi " + fname;
+        document.getElementById("firstname").innerHTML = "Name: " + fname;
 
-        var year = prompt("What year were you born?");
+        var year = document.getElementById("age");
+        year = prompt("What year were you born?");
 
         if (year < 2020) {
-            age = 2020 - year;
-            document.write("<br>You are " + age);
+            var agex = 2020 - year;
+            document.getElementById("age").innerHTML = "Age: " + agex;
         }
         else
-            document.write("<br>Year you entered is invalid");
+            document.getElementById("age").innerHTML = "Wait... you came from the future?";
     </script>
 </body>
 </html>
