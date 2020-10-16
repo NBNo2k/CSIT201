@@ -19,11 +19,29 @@
 		<h3>Manage Lists</h3>
 
 		<p>
-			<?php #Checks if set otherwise
-				if (isset($_SESSION['add']))
+			<?php 
+				if (isset($_SESSION['add']))	#Checks if set otherwise
 				{
 					echo $_SESSION['add'];	#Display message
 					unset($_SESSION['add']);	#Remove after the display (once)
+				}
+
+				if(isset($_SESSION['delete']))	#Chech session for delete
+				{
+					echo $_SESSION['delete'];
+					unset ($_SESSION['delete']);
+				}
+
+				if(isset($_SESSION['update']))
+				{
+					echo $_SESSION['update'];
+					unset($_SESSION['update']);
+				}
+
+				if(isset($_SESSION['delete_fail']))	#Check if delete failed
+				{
+					echo $_SESSION['delete_fail'];
+					unset ($_SESSION['delete_fail']);
 				}
 			?>
 		</p>
@@ -64,8 +82,8 @@
 												<td><?php echo $order++;?></td>
 												<td><?php echo $list_name;?></td>
 												<td>
-													<a href="#">Update</a>
-													<a href="#">Delete</a>
+													<a href="<?php echo SITEURL; ?>update_list.php?list_order=<?php echo $list_order; ?>">Update</a>
+													<a href="<?php echo SITEURL; ?>delete_list.php?list_order=<?php echo $list_order; ?>">Delete</a>
 												</td>
 											</tr>
 										<?php
