@@ -1,0 +1,16 @@
+The app contains
+
+1. The list of tasks
+	Contains:
+		Table of Lists
+			Order
+			Name
+			Description
+
+2. The tasks itself
+	Contains:
+		Name
+		Description
+		Deadline
+		List
+		Priority
