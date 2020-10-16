@@ -1,3 +1,7 @@
+<?php 
+	include('config/constants.php');
+?>
+
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
@@ -8,14 +12,14 @@
 	
 		<!-- Menu Starts Here-->
 		<div class="menu">
-			<a href="index.php">HOME</a>	<!-- Static Link -->
+			<a href="<?php echo SITEURL; ?>index.php">HOME</a>	<!-- Static Link -->
 		
 			<!-- Dynamic Links -->
 			<a href="#">To Do</a>
 			<a href="#">In Progress</a>
 			<a href="#">Done</a>
 
-			<a href="manage_list.php">Manage Lists</a>	<!-- Static Link -->
+			<a href="<?php echo SITEURL; ?>manage_list.php">MANAGE LISTS</a>	<!-- Static Link -->
 		</div>
 		<!-- Menu Ends Here-->
 
@@ -44,5 +48,6 @@
 				</table>
 		</div>
 		<!-- Tasks Ends Here -->
+
 	</body>
 </html>

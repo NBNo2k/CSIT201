@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\config"
   ],
-  "SelectedNode": "\\index.php",
+  "SelectedNode": "\\config\\constants.php",
   "PreviewInSolutionExplorer": false
 }
