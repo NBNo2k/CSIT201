@@ -12,12 +12,28 @@
 	
 		<!-- Menu Starts Here-->
 		<div class="menu">
-			<a href="<?php echo SITEURL; ?>index.php">HOME</a>	<!-- Static Link -->
+			<a href="<?php echo SITEURL; ?>">HOME</a>	<!-- Static Link -->
 		
-			<!-- Dynamic Links -->
-			<a href="#">To Do</a>
-			<a href="#">In Progress</a>
-			<a href="#">Done</a>
+			<?php
+				 $conn2 = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error());
+				 $db_select2 = mysqli_select_db($conn2, DB_NAME) or die(mysqli_errror());
+				 $sql2 = "SELECT * FROM table_of_lists";
+				 $res2 = mysqli_query($conn2, $sql2);
+
+				 if($res2 == true)
+				 {
+					  while($row2 = mysqli_fetch_assoc($res2))
+					  {
+						$list_order = $row2['list_order'];
+						$list_name = $row2['list_name'];
+						?>
+
+							<a href="<?php echo SITEURL; ?>list_task.php?list_order=<?php echo $list_order; ?>"><?php echo $list_name; ?></a>	
+
+						<?php
+					  }
+				 }
+			?>
 
 			<a href="<?php echo SITEURL; ?>manage_list.php">MANAGE LISTS</a>	<!-- Static Link -->
 		</div>
