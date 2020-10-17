@@ -5,14 +5,16 @@
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
+		<link rel="stylesheet" href="<?php echo SITEURL; ?>CSS/style.css"/>
 	</head>
 
 	<body>
+	<div class="wrapper">
 		<h1>NO SHILLY-SHALLY</h1>
 
 		<!-- Menu Starts Here-->
 		<div class="menu">
-			<a href="<?php echo SITEURL; ?>index.php">HOME</a>	<!-- Static Link -->
+			<a class="btn-secondary" href="<?php echo SITEURL; ?>index.php">HOME</a>	<!-- Static Link -->
 		</div>
 		<!-- Menu Ends Here-->
 
@@ -48,8 +50,8 @@
 
 		<!-- Table to Display Lists Starts Here-->
 		<div class="all_lists">
-			<a href="<?php echo SITEURL; ?>add_lists.php">Add List</a>
-					<table>
+			<a class="btn-secondary" href="<?php echo SITEURL; ?>add_lists.php">Add List</a>
+					<table class="table_half">
 						<tr>
 							<th>Order</th>
 							<th>List Name</th>
@@ -103,6 +105,6 @@
 					</table>
 		</div>
 		<!-- Table to Display Lists Ends Here-->
-
+	</div>
 	</body>
 </html>

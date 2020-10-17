@@ -28,13 +28,15 @@
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
+		<link rel="stylesheet" href="<?php echo SITEURL; ?>CSS/style.css"/>
 	</head>
 
 	<body>
+	<div class="wrapper">
 		<h1>NO SHILLY-SHALLY</h1>
 
 		<p>
-			<a href="<?php echo SITEURL; ?>">HOME</a>
+			<a class="btn-secondary" href="<?php echo SITEURL; ?>">HOME</a>
 		</p>
 
 		<h3>UPDATE TASK</h3>
@@ -50,7 +52,7 @@
 		</p>
 
 		<form method="POST" action="">
-			<table>
+			<table class="table_half">
 				<tr>
 					<td>Task Name: </td>
 					<td><input type="text" name="task_name" value="<?php echo $task_name; ?>" required="required"/></td>
@@ -126,11 +128,12 @@
 
 				<tr>
 					<td>
-						<input type="submit" name="submit" value="UPDATE"/>
+						<input class="btn-secondary btn-lg" type="submit" name="submit" value="UPDATE"/>
 					</td>
 				</tr>
 			</table>
 		</form>
+	</div>
 	</body>
 </html>
 

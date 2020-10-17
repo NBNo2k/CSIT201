@@ -29,14 +29,16 @@
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
+		<link rel="stylesheet" href="<?php echo SITEURL; ?>CSS/style.css"/>
 	</head>
 
 	<body>
+	<div class="wrapper">
 		<h1>NO SHILLY-SHALLY</h1>
 
 		<div class="menu">
-			<a href="<?php echo SITEURL; ?>">HOME</a>
-			<a href="<?php echo SITEURL; ?>manage_list.php">MANAGE LISTS</a>
+			<a class="btn-secondary" href="<?php echo SITEURL; ?>">HOME</a>
+			<a class="btn-secondary" href="<?php echo SITEURL; ?>manage_list.php">MANAGE LISTS</a>
 		</div>
 
 		<h3>UPDATE LIST</h3>
@@ -52,7 +54,7 @@
 		</p>
 
 		<form method="POST" action="">
-			<table>
+			<table class="table_half">
 				<tr>
 					<td>List Name: </td>
 					<td><input type="text" name="list_name" value="<?php echo $list_name; ?>" required="required"/></td>
@@ -68,10 +70,11 @@
 				</tr>
 
 				<tr>
-					<td><input type="submit" name="submit" value="UPDATE"/></td>
+					<td><input class="btn-secondary btn-lg" type="submit" name="submit" value="UPDATE"/></td>
 				</tr>
 			</table>
 		</form>
+	</div>
 	</body>
 </html>
 

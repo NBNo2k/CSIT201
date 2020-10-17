@@ -5,12 +5,14 @@
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
+		<link rel="stylesheet" href="<?php echo SITEURL; ?>CSS/style.css"/>
 	</head>
 
 	<body>
+	<div class="wrapper">
 		<h1>NO SHILLY-SHALLY</h1>
 
-		<a href="<?php echo SITEURL; ?>">HOME</a>
+		<a class="btn-secondary" href="<?php echo SITEURL; ?>">HOME</a>
 
 		<h3>Add Task</h3>
 
@@ -25,7 +27,7 @@
 		</p>
 
 		<form method="POST" action="">
-			<table>
+			<table class="table_half">
 				<tr>
 					<td>Task Name: </td>
 					<td><input type="type" name="task_name" placeholder="Add task name" required="required"/></td>
@@ -94,11 +96,12 @@
 
 				<tr>
 					<td>
-						<input type="submit" name="submit" value="SAVE"/>
+						<input class="btn-primary btn-lg" type="submit" name="submit" value="SAVE"/>
 					</td>
 				</tr>
 			</table>
 		</form>
+	</div>
 	</body>
 </html>
 

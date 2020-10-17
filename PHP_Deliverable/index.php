@@ -5,9 +5,12 @@
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
+		<link rel="stylesheet" href="<?php echo SITEURL; ?>CSS/style.css"/>
 	</head>
 	
 	<body>
+
+	<div class="wrapper">
 		<h1>NO SHILLY-SHALLY</h1>
 	
 		<!-- Menu Starts Here-->
@@ -69,8 +72,8 @@
 		</p>
 
 		<div class="all_tasks">
-			<a href="<?php SITEURL; ?>add_task.php">Add Tasks</a>
-				<table>
+			<a class="btn-primary" href="<?php SITEURL; ?>add_task.php">Add Tasks</a>
+				<table class="table_full">
 					<tr>
 						<th>Order</th>
 						<th>Task Name</th>
@@ -125,6 +128,6 @@
 				</table>
 		</div>
 		<!-- Tasks Ends Here -->
-
+	</div>
 	</body>
 </html>

@@ -5,13 +5,15 @@
 <html>
 	<head>
 		<title>No Shilly-Shally</title>
+		<link rel="stylesheet" href="<?php echo SITEURL; ?>CSS/style.css"/>
 	</head>
 
 	<body>
+	<div class="wrapper">
 		<h1>NO SHILLY-SHALLY</h1>
 
-		<a href="<?php echo SITEURL; ?>index.php">HOME</a>
-		<a href="<?php echo SITEURL; ?>manage_list.php">MANAGE LISTS</a>
+		<a class="btn-secondary" href="<?php echo SITEURL; ?>index.php">HOME</a>
+		<a class="btn-secondary" href="<?php echo SITEURL; ?>manage_list.php">MANAGE LISTS</a>
 
 		<h3>Add Lists</h3>
 
@@ -27,7 +29,7 @@
 
 		<!-- Form to Add Lists Starts Here -->
 		<form method="POST" action="">
-			<table>
+			<table class="table_half">
 				<tr>
 					<td>Lists Name: </td>
 					<td><input type="text" name="list_name" placeholder="Add Name" required="required"/></td>
@@ -42,13 +44,13 @@
 
 				<tr>
 					<td>
-						<input type="submit" name="submit" value="SAVE"/>
+						<input class="btn-secondary btn-lg" type="submit" name="submit" value="SAVE"/>
 					</td>
 				</tr>
 			</table>
 		</form>
 		<!-- Form to Add Lists Ends Here -->
-
+	</div>
 	</body>
 </html>
 
