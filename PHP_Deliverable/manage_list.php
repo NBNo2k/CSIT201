@@ -66,7 +66,7 @@
 							{
 								#test echo "Executed";
 
-								echo $count_rows = mysqli_num_rows($res);	#Count the rows of data in the database
+								$count_rows = mysqli_num_rows($res);	#Count the rows of data in the database
 								
 								$order = 1;#Create list order accordingly
 
