@@ -31,6 +31,24 @@
 					echo $_SESSION['add'];
 					unset($_SESSION['add']);
 				}
+
+				if(isset($_SESSION['delete']))
+				{
+					echo $_SESSION['delete'];
+					unset($_SESSION['delete']);
+				}
+
+				if(isset($_SESSION['update']))
+				{
+					echo $_SESSION['update'];
+					unset($_SESSION['update']);
+				}
+
+				if(isset($_SESSION['delete_fail']))
+				{
+					echo $_SESSION['delete_fail'];
+					unset($_SESSION['delete_fail']);
+				}
 			?>
 		</p>
 
@@ -71,8 +89,8 @@
 										<td><?php echo $priority; ?></td>
 										<td><?php echo $deadline; ?></td>
 										<td>
-											<a href="#">Update</a>
-											<a href="#">Delete</a>
+											<a href="<?php echo SITEURL; ?>update_task.php?task_order=<?php echo $task_order; ?>">UPDATE</a>
+											<a href="<?php echo SITEURL; ?>delete_task.php?task_order=<?php echo $task_order; ?>">DELETE</a>
 										</td>
 									</tr>
 									<?php
